@@ -19,9 +19,9 @@ Middleware Usage
 ----------------
 ``` javascript
 var Koa = require('koa'),
-    static = require('koa-static'),
+    serveStatic = require('koa-static'),
     app = new Koa(),
-    compileSass = require('express-compile-sass'),
+    compileSass = require('koa-compile-sass'),
     root = process.cwd();
 
 app.use(compileSass({
@@ -31,7 +31,7 @@ app.use(compileSass({
     watchFiles: true, // Watches sass files and updates mtime on main files for each change
     logToConsole: false // If true, will log to console.error on errors
 });
-app.use(static(root));
+app.use(serveStatic(root));
 
 app.listen(5000);
 console.log('Listening on port: 5000');
