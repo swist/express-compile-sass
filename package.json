@@ -5,6 +5,7 @@
   "files": [
     "lib/index.js"
   ],
+  "main": "lib/index.js",
   "scripts": {
     "lint": "jshint .",
     "test": "npm run lint && mocha",
