@@ -53,3 +53,8 @@ Ported express compile sass to work with koa
 License
 -------
 MIT
+
+Acknowledgements
+----------------
+
+Many thanks to Peter Müller <munter@fumle.dk>  @munter for creating the express version of this (available as upstream fork)
